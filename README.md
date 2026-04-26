@@ -22,14 +22,15 @@ F1 Score	0.49	0.63
 👉 Achieved ~12% improvement in accuracy and significant gains in recall and F1.
 
 **🧠 Key Challenges**
+
 1. Label Noise
+
 Many hatespeech examples were incorrectly labeled as offensive
 Safe content (criticism/opinion) mislabeled as offensive
 
 2. Class Boundary Confusion
 
 Model initially failed to distinguish:
-
 "This idea is stupid" → normal
 "You are stupid" → offensive
 "People like you are stupid" → hatespeech
@@ -37,7 +38,7 @@ Model initially failed to distinguish:
 3. Model Collapse
 Early versions predicted a single dominant class (e.g., offensive)
 
-🛠️ Approach
+**🛠️ Approach**
 
 🔹 1. Data Cleaning
 Removed noisy tokens (<user>, <number>, encoding artifacts)
